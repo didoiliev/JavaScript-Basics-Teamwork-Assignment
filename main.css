@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Chunk;
+    src: url(Chunkfive.otf);
+}
+
+body {
+	background-color: darkblue;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: darkgreen;
+}
+
+.canvas-wrapper {
+	width: 860px;
+	height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid yellow;
+	cursor: none;
+}
+
+canvas {
+	background-color:white;
+}
