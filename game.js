@@ -14,8 +14,8 @@ function init() {
    	drawBullets(stage);
 
 	var crosshair = new createjs.Bitmap("crosshair.png");
-	crosshair.scaleX = 0.03;
-	crosshair.scaleY = 0.03;
+	crosshair.scaleX = 0.4;
+	crosshair.scaleY = 0.4;
    	crosshair.x = -9999;
    	crosshair.y = -9999;
    	stage.addChild(crosshair);
@@ -25,8 +25,8 @@ function init() {
 	}
 
 	function moveHandler() {
-   		crosshair.x = stage.mouseX - 55;
-   		crosshair.y = stage.mouseY - 55;
+   		crosshair.x = stage.mouseX - 20;
+   		crosshair.y = stage.mouseY - 20;
   	}
 
   	stage.addEventListener("stagemousemove", moveHandler);
@@ -74,8 +74,8 @@ function addTitleMenu(stage) {
 		verticalSpace = verticalSpace + 50;
 		var hitArea = new createjs.Shape();
 		hitArea.graphics.beginFill("#000").drawRect(0, 0, 
-			tempBtn.getMeasuredWidth() + 30, 
-			tempBtn.getMeasuredHeight() + 10);
+			tempBtn.getMeasuredWidth() + 50, 
+			tempBtn.getMeasuredHeight()) + 20;
 		
 		tempBtn.hitArea = hitArea;
 		stage.addChild(tempBtn);
