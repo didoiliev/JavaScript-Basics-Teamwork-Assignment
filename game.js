@@ -40,8 +40,8 @@ function addTitleMenu(stage) {
 
 	var menuBullet = new createjs.Bitmap("menu-bullet.png");
     menuBullet.alpha = 0;
-    menuBullet.scaleX = 0.1;
-    menuBullet.scaleY = 0.1;
+    menuBullet.scaleX = 1;
+    menuBullet.scaleY = 1;
     stage.addChild(menuBullet);
 
 	var menuButtons = [
@@ -94,8 +94,8 @@ function drawBullets(stage) {
 	var horizontalSpace = 50;
 	for (var i = 0; i < 6; i++) {
 		var bullet = new createjs.Bitmap("bullet.png");
-		bullet.scaleX = 0.09;
-		bullet.scaleY = 0.09;
+		bullet.scaleX = 1;
+		bullet.scaleY = 1;
 		bullet.x = stage.canvas.width - horizontalSpace;
 		bullet.y = stage.canvas.height - 100;
 		horizontalSpace = horizontalSpace + 20;
